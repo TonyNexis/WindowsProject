@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "airbnb-base",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "linebreak-style": 0,
+        "global-require": 0,
+        "eslint linebreak-style": [0, "error", "window"], // фикс пробела
+        "no-unused-vars": "off", // фикс переменных, которые еще нигде не использовались
+        "one-var": "off", // фикс const для нескольких переменных
+        "prefer-const": "off", // фикс переменных, которые никогда не переначались, используй const
+        "no-param-reassign": "off", // фикс переменных, которые никогда не переначались, используй const
+        "arrow-parens": "off", // фикс переменных, которые никогда не переначались, используй const
+        "indent": "off" // фикс лишних пробелов в начале строки
+    }
+}
